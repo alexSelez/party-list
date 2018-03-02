@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.app {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e5e3e3;
+}
+.app-title{
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(24,149,215);
+}
+.persons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textbox{
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border: rgba(0,0,0,0.3) 2px solid;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 6px;
+  margin-bottom: 10px; 
+}
+.textbox:focus{
+  outline: none;
+  border: rgb(24,149,215) 2px solid;
+  color: rgb(24,149,215);
+}
+/*Фильтр*/
+.filters a{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.filters a:hover{
+  border-bottom: 2px solid rgb(24, 149, 215);
+}
+.selected {
+  color: rgb(24,149,215);
+}
+.selected:focus{
+  outline: none;
+}
+
+/*Список гостей*/
+.table{
+  width: 400px;
+  margin: 10px auto;
+  background-color: rgba(24, 149, 215, 0.3);
+  color: rgb(24,149,215);
+  border-radius: 3px;
+  border: 2px solid rgb(24, 149, 215);
+}
+.table thead{
+  font-weight: 700;
+}
+.table tr{
+  height: 30px;
+}
+.table .name {
+  width: 60%;
+  text-align: left;
+  cursor: pointer;
+}
+.table .pair, .table .delete {
+  width: 20%;
+  text-align: center;
+}
+.mark-pair{
+  cursor: pointer;
+}
+.delete img {
+  width: 15px;
+  transition: ease .3s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.delete img:hover {
+  opacity: 1;
+}
+
